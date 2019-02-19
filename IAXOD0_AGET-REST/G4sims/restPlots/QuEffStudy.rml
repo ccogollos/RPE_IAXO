@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+
+    <!-- Here you can add as many files as you want through a config file using addFile -->
+    <!--
+    <addFile name="{REST_INPUT_FILE}" />
+    <addFile name="{REST_INPUT_FILE2}" />
+  --> 
+<environment>
+    <variable name="IAXOD0_PATH" value="/home/zar30001/elisa/IAXOD0-REST/" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="/home/zar30001/elisa/data/IAXOD0/" overwrite="true" />
+    <variable name="IAXOD0_GEODIR" value="XenonIso1Pct_VirtualSource" overwrite="true" />   <!-- options "Argon" or "Neon" -->
+    <variable name="DIR_DATA" value="QuEfficiency" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/QuEffPlots" overwrite="true" />
+    <variable name="ENERGY" value="8.0" overwite="true" />
+    <variable name="ENERGYlow" value="7.9" overwite="true" />
+    <variable name="ENERGYtop" value="8.1" overwite="true" />
+</environment>
+
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Run_Track_analysis_80keVGamma_Version_2.1.6.root" />
+
+<parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+<canvas size="(1600,1000)" divide="(3,2)" save="${DIR_PLOT}/Plot_XeIso1Pct_${ENERGY}keVGamma.root" />
+
+<globalCut name="tckAna.nTracksXYZ" condition="<2" value="OFF"/> 
+<globalCut name="g4Ana.gasVolumeEDep" condition="<10" value="OFF"/>
+<globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="OFF"/>
+<globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="OFF"/>
+
+<plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="X (mm)" ylabel="Y (mm)" save="${DIR_PLOT}/tempXY.root" value="ON" >
+    <variable name="tckAna.maxXMean" range="(-60,60)" nbins="120"/>
+    <variable name="tckAna.maxYMean" range="(-60,60)" nbins="120"/>   
+</plot>
+
+<plot name="Distance to Walls" title="Distance to fiducial cylinder wall" xlabel="DistToWalls (mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/tempDisToWals.root" value="ON" >
+    <variable name="hitsAna.distanceToCylinderWall" range="(0,50)" nbins="50"/>         
+</plot>
+
+<plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/tempEGas.root" value="ON" >
+    <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>         
+</plot>
+
+<plot name="XZ position of track" title="XZ position of the track of maximum energy" xlabel="Z (mm)" ylabel="X (mm)" save="${DIR_PLOT}/tempXZ.root" value="ON" >
+    <variable name="tckAna.maxXMean" range="(-60,60)" nbins="120"/>
+    <variable name="tckAna.maxZMean" range="(-20,20)" nbins="200"/>       
+</plot>
+
+<plot name="Distance to Top" title="Distance to fiducial cylinder top" xlabel="DistToTop (mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/tempDisToTop.root" value="ON" >
+    <variable name="hitsAna.distanceToCylinderTop" range="(0,31)" nbins="31"/>         
+</plot>
+
+<plot name="Energy in gas" title="Deposited energy in gas by events with same energy" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/tempEGasEvents.root" value="ON" >
+    <cut variable="g4Ana.gasVolumeEDep" condition=">${ENERGYlow}" value="ON" />
+    <cut variable="g4Ana.gasVolumeEDep" condition="<${ENERGYtop}" value="ON" />
+    <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>         
+</plot>
+
+</section>  
+
+
+

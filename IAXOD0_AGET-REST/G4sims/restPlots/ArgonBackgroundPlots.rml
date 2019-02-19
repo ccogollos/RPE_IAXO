@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+        
+
+<environment>
+    <variable name="IAXOD0_PATH" value="/home/zar30001/elisa/IAXOD0-REST/" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="/home/zar30001/elisa/data/IAXOD0/" overwrite="true" />
+    <variable name="IAXOD0_GEODIR" value="Argon" overwrite="true" />
+    <variable name="DIR_DATA" value="Muons" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
+    <variable name="label" value="muons" overwrite="true" />
+</environment>
+
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00102_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00103_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00104_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00105_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00106_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00107_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00108_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00109_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00110_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00111_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00112_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00113_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00114_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00115_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00116_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00117_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00118_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00119_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00120_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00146_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00147_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00148_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00149_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00150_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00151_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00152_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00153_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00154_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00155_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00156_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00157_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00158_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00160_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00161_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00162_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00163_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00164_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00165_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00166_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00167_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00168_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00169_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00170_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00171_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00172_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00173_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00174_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00175_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00225_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00226_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00227_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00228_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00229_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00230_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00231_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00232_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00233_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00234_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00235_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00236_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00237_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00238_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00239_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00240_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00241_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00242_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00243_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00244_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00245_Version_2.1.6.root" />
+
+
+    <!-- <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00006_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00007_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00008_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00009_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00010_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00011_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00012_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00013_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00014_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00015_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00016_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00017_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00021_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00023_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Run_Track_analysis_Muons_ArIso_00047_Version_2.1.6.root" />-->
+
+    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+
+    <canvas size="(1200,800)" divide="(3,2)" save="${DIR_PLOT}/RoIAll_Tracks0-7_DtWAll_isInsideCyl_DtT01_2.root" />
+
+    <!-- <canvas size="(800,600)" save="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Plots/RoI0-10_allTracks_allDtW.root" /> -->
+
+    <globalCut name="tckAna.nTracksXYZ" condition="==2" value="OFF"/> 
+    <globalCut name="hitsAna.distanceToCylinderWall" condition=">40" value="OFF"/>
+    <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
+    <globalCut name="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
+    <globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
+
+
+    <plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
+        <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="200"/>  
+    </plot>
+ 
+    <plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="mm" ylabel="mm" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>    
+    </plot>
+ 
+    <plot name="XZ position of track" title="XZposition of the track of maximum energy" xlabel="mm" ylabel="mm"  logscale="false" save="${DIR_PLOT}/temp/XZ${label}.root" value="ON" >
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxZMean" range="(-16,19)" nbins="240"/>  
+    </plot>
+
+
+    <plot name="XYZ position of track" title="XYZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" zlabel="Z(mm)" option="" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+        <variable name="tckAna.maxZMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+    </plot>
+
+    <plot name="Distance to walls" title="Distance to walls " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Walls${label}.root" value="ON" >
+        <variable name="hitsAna.distanceToCylinderWall" range="(-2,50)" nbins="52" />
+    </plot>
+
+
+    <plot name="Distance to bottom" title="Distance to bottom " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Bottom${label}.root" value="ON" >
+         <variable name="hitsAna.distanceToCylinderBottom" range="(-2,35)" nbins="37" />
+    </plot>
+
+
+    <plot name="Total Energy" title="Total Deposited Energy" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/temp/Etot${label}.root" value="OFF" >
+        <variable name="g4Ana.totalEdep" range="(0,2000)" nbins="200"/>   
+    </plot>
+
+
+    <plot name="number of tracks" title="Number of tracks " xlabel="#tracks" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Tracks${label}.root" value="OFF" >
+        <variable name="tckAna.nTracksXYZ" range="(0,10)" nbins="10" />
+    </plot>
+
+</section>  

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+
+    <!-- Here you can add as many files as you want through a config file using addFile -->
+    <!--
+    <addFile name="{REST_INPUT_FILE}" />
+    <addFile name="{REST_INPUT_FILE2}" />
+  --> 
+<environment>
+<variable name="TREXDM_PATH" value="${HOME}/gloria/TREXDM-REST/" overwrite="true" />
+    <variable name="TREXDM_DATAPATH" value="${HOME}/gloria/restData/TREXDM/" overwrite="true" />
+      <variable name="TREXDM_GEODIR" value="Neon" overwrite="true" />   <!-- options "Argon" or "Neon" -->
+ <variable name="DIR_DATA" value="BackgroundComponents" overwrite="true" />
+  
+<variable name="DIR_PLOT" value="${TREXDM_DATAPATH}/${TREXDM_GEODIR}/${DIR_DATA}/Plots/Cathode" overwrite="true" />
+    <variable name="label0" value="Th232CatLight" overwrite="true" />
+    <variable name="label" value="_(0,10)" overwrite="true" />
+</environment>
+
+
+ <addFile name="${TREXDM_DATAPATH}/${TREXDM_GEODIR}/${DIR_DATA}/Cathode/RunLightShield_FullAnalysis_Th232Cathode_00000_Version_2.1.6.root" />
+
+
+   <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+
+
+     <canvas size="(1200,800)" divide="(3,2)" save="${DIR_PLOT}/Plot${label0}${label}.root" />
+
+
+
+
+  <globalCut name="tckAna.nTracksXYZ" condition="==1" value="OFF"/> 
+   <globalCut name="hitsAna.distanceToPrismWall" condition=">10" value="OFF"/>
+<globalCut name="hitsAna.distanceToPrismWall" condition="<20" value="OFF"/>
+   <globalCut name="hitsAna.distanceToPrismTop" condition=">160" value="OFF"/>
+   <globalCut name="hitsAna.distanceToPrismBottom" condition=">160" value="OFF"/>
+   <globalCut name="g4Ana.gasVolumeEDep" condition="<10" value="ON"/>
+   <globalCut name="g4Ana.gasVolumeEDep" condition=">0.0002" value="ON"/>
+
+<plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" 
+            logscale="false" save="${DIR_PLOT}/EGas${label0}${label}.root" value="ON" >
+       <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>
+       
+          
+</plot>
+
+ 
+<plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" option="colz"
+            logscale="false" save="${DIR_PLOT}/XY${label0}${label}.root" value="ON" >
+            <variable name="tckAna.maxYMean" range="(-122,122)" nbins="122"/>
+           <variable name="tckAna.maxXMean" range="(-122,122)" nbins="122"/>
+       
+       
+          
+</plot>
+
+ 
+<plot name="XZ position of track" title="XZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Z(mm)"  option="colz"
+            logscale="false" save="${DIR_PLOT}/XZ${label0}${label}.root" value="ON" >
+            <variable name="tckAna.maxZMean" range="(-165,165)" nbins="165"/>
+           <variable name="tckAna.maxXMean" range="(-122,122)" nbins="122"/>          
+</plot>
+
+ 
+<plot name="XYZ position of track" title="XYZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" zlabel="Z(mm)" option=""
+            logscale="false" save="${DIR_PLOT}/XYZ${label0}${label}.root" value="ON" >
+            <variable name="tckAna.maxZMean" range="(-165,165)" nbins="165"/>
+           <variable name="tckAna.maxYMean" range="(-122,122)" nbins="122"/>
+            <variable name="tckAna.maxXMean" range="(-122,122)" nbins="122"/>
+          
+</plot>
+
+<plot name="Distance to walls" title="Distance to walls " xlabel="D(mm)" ylabel="Counts" 
+logscale="false" save="${DIR_PLOT}/Walls${label0}${label}.root" value="ON" >
+        	<variable name="hitsAna.distanceToPrismWall" range="(-2,130)" nbins="66" />
+</plot>
+
+
+<plot name="Distance to bottom" title="Distance to bottom " xlabel="D(mm)" ylabel="Counts" 
+logscale="false" save="${DIR_PLOT}/Bottom${label0}${label}.root" value="ON" >
+        	<variable name="hitsAna.distanceToPrismBottom" range="(-10,320)" nbins="165" />
+</plot>
+
+
+
+
+
+
+
+</section>  

@@ -1,0 +1,67 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+        
+
+<environment>
+    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST/" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="/home/zar30001/cristian/AGET_Sims/data/IAXOD0/" overwrite="true" />
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="true" />
+    <variable name="DIR_DATA" value="Th228_Chip" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots/Histo" overwrite="true" />
+    <variable name="label" value="Th228_Chip" overwrite="true" />
+    <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
+    <variable name="CutDtW" value="ON" overwrite="true" />
+    <variable name="labelTrack" value="1" overwrite="true" />
+    <variable name="CutTrack" value="ON" overwrite="true" />
+
+
+</environment>
+
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00116_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00117_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00124_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00131_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00132_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00135_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00137_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00139_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00143_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00146_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00150_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00155_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00156_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00157_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00163_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00164_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_Chip_00168_Version_2.1.6.root" />
+
+    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+
+    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot${label}EnergyHisto_Tr${labelTrack}.root" />
+
+    <!-- Cuts to remove events out of the fiducial cylinder 
+    <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
+    <globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
+-->
+    <!-- Spatial cuts 
+    <globalCut variable="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
+    <globalCut variable="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
+-->
+    <!-- Track cuts -->
+    <globalCut name="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
+
+    <!-- Energy cuts 
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="OFF"/>
+-->
+
+    <!-- Plot configuration -->
+
+    <plot name="Energy in gas" title="Deposited energy in gas by radiation emmited from the chip" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
+        <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>  <!--Histogram with 0.1keV bins -->
+    </plot>
+
+</section>  

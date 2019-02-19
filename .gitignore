@@ -1,0 +1,6 @@
+#Ignoring files with root extension#
+*.root
+#Ignoring temporary files ending with ~ #
+*~
+#Ignoring object files ending in .o<number>#
+*.o*

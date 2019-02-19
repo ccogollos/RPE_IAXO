@@ -1,0 +1,13 @@
+#!bin/bash
+
+sbatch restG4U238FromChip_closer.sh
+sbatch restG4Ra226FromChip_closer.sh
+sbatch restG4Ra228FromChip_closer.sh
+sbatch restG4Th228FromChip_closer.sh
+sbatch restG4K40FromChip_closer.sh
+
+sbatch restG4U238FromChip_closer.sh
+sbatch restG4Ra226FromChip_closer.sh
+sbatch restG4Ra228FromChip_closer.sh
+sbatch restG4Th228FromChip_closer.sh
+sbatch restG4K40FromChip_closer.sh

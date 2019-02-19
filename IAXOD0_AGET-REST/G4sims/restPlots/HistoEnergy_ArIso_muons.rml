@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+        
+
+<environment>
+    <variable name="IAXOD0_PATH" value="/home/zar30001/elisa/IAXOD0-REST/" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="/home/zar30001/elisa/data/IAXOD0/" overwrite="true" />
+    <variable name="IAXOD0_GEODIR" value="Argon_bigWall" overwrite="true" />
+    <variable name="DIR_DATA" value="Muons" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots/Histo" overwrite="true" />
+    <variable name="label" value="Muons" overwrite="true" />
+    <variable name="labelDtW" value="" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
+    <variable name="CutDtW" value="OFF" overwrite="true" />
+    <variable name="labelTrack" value="" overwrite="true" />
+    <variable name="CutTrack" value="OFF" overwrite="true" />
+</environment>
+
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00102_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00103_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00104_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00105_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00106_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00107_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00108_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00109_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00110_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00111_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00112_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00113_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00114_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00115_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00116_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00117_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00118_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00119_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00120_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00146_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00147_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00148_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00149_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00150_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00151_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00152_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00153_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00154_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00155_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00156_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00157_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00158_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00160_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00161_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00162_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00163_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00164_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00165_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00166_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00167_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00168_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00169_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00170_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00171_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00172_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00173_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00174_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00175_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00225_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00226_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00227_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00228_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00229_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00230_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00231_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00232_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00233_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00234_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00235_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00236_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00237_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00238_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00239_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00240_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00241_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00242_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00243_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00244_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00245_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00250_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00251_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00252_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00253_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00254_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00255_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00256_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00257_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00258_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00259_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00260_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00261_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00262_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00263_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00264_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00265_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00266_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00267_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00268_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00269_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00270_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00271_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00272_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00273_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00274_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00275_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00276_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00277_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00278_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00279_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00280_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00281_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00282_Version_2.1.6.root" />
+    <addFile name="/home/zar30001/elisa/data/IAXOD0/Argon_bigWall/Muons/Run_Track_analysis_Muons_ArIso_00283_Version_2.1.6.root" />
+
+
+    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+
+    <canvas size="(1200,800)" save="${DIR_PLOT}/Energyyy${label}_isInsideCyl_DtT0.1mm_Tr${labelTrack}_DtW${labelDtW}mm.root" />
+
+    <!-- Cuts to remove events out of the fiducial cylinder -->
+    <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
+    <globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
+
+    <!-- Spatial cuts -->
+    <globalCut name="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
+    <globalCut name="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
+
+    <!-- Track cuts -->
+    <globalCut name="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
+
+    <!-- Energy cuts -->
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="OFF"/>
+
+
+    <!-- Plot configuration -->
+
+    <plot name="Energyingas" title="Deposited energy in gas by cosmic muons" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
+        <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>  <!-- Histogram with 0.1keV bins -->
+    </plot>
+
+</section>  
