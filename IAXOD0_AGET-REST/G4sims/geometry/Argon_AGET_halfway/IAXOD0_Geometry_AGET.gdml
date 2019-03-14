@@ -357,15 +357,10 @@
         <materialref ref="Copper"/>
         <solidref ref="ConnectorBottom"/>
     </volume>
-
+-->
     <volume name="CapTopCentreVolume">
         <materialref ref="Copper"/>
         <solidref ref="CapTopCentre"/>
-    </volume>
-
-    <volume name="CapBottomLeftVolume">
-        <materialref ref="Copper"/>
-        <solidref ref="CapBottomLeft"/>
     </volume>
 
     <volume name="CapBottomCentreVolume">
@@ -373,22 +368,11 @@
         <solidref ref="CapBottomCentre"/>
     </volume>
 
-    <volume name="CapBottomRightVolume">
-        <materialref ref="Copper"/>
-        <solidref ref="CapBottomRight"/>
-    </volume>
-
-    <volume name="ResCapLeftVolume">
+    <volume name="ResTopCentreVolume">
         <materialref ref="Copper"/>
         <solidref ref="ResCapLeft"/>
     </volume>
 
-    <volume name="ResCapRightVolume">
-        <materialref ref="Copper"/>
-        <solidref ref="ResCapRight"/>
-    </volume>
--->
-        	
     <!-- Physical volume definition (volume and position assignment) ..............................-->
         
     <volume name="World">
@@ -525,15 +509,10 @@
           <volumeref ref="ConnectorBottomVolume"/>
           <position name="ConnectorBottomPosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-AGET_size_z/2.+Connector_z*0.6"/>
         </physvol>
-        
+-->        
         <physvol name="CapTopCentrePhysVolume">
           <volumeref ref="CapTopCentreVolume"/>
           <position name="CapTopCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z"/>
-        </physvol>
-
-        <physvol name="CapBottomLeftPhysVolume">
-          <volumeref ref="CapBottomLeftVolume"/>
-          <position name="CapBottomLeftPosition"  x="AGET_pos_x+Chip_x/2+CapRect_x*0.7" y="AGET_pos_y+AGET_size_y/2" z="AGET_pos_z-CapRect_x/2.*1.2-Chip_z*1.2-CapRect_z/2.-CapSquare_z"/>
         </physvol>
 
         <physvol name="CapBottomCentrePhysVolume">
@@ -541,21 +520,11 @@
           <position name="CapBottomCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_x/2*1.2-Chip_z*1.2-CapRect_z/2."/>
         </physvol>
 
-        <physvol name="CapBottomRightPhysVolume">
-          <volumeref ref="CapBottomRightVolume"/>
-          <position name="CapBottomRightPosition"  x="AGET_pos_x-Chip_x/2-CapRect_x*0.7" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_x/2.*1.2-Chip_z*1.2-CapRect_z/2.-CapSquare_z"/>
+        <physvol name="ResTopCentrePhysVolume">
+          <volumeref ref="ResTopCentreVolume"/>
+          <position name="ResTopCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z+CapRect_x/2*1.2+ResRect_z/2"/>
         </physvol>
 
-        <physvol name="ResCapLeftPhysVolume">
-          <volumeref ref="ResCapLeftVolume"/>
-          <position name="ResCapLeftPosition"  x="AGET_pos_x+Chip_x/2.+CapRect_x*0.7" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z"/>
-        </physvol>
-
-        <physvol name="ResCapRightPhysVolume">
-          <volumeref ref="ResCapRightVolume"/>
-          <position name="ResCapRighttPosition"  x="AGET_pos_x-Chip_x/2.-CapRect_x*0.7" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z"/>
-        </physvol>
--->
         <physvol name="ChipVolume">
           <volumeref ref="ChipVolume"/>
           <position name="ChipPosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.*1.2-Chip_z/2"/>
