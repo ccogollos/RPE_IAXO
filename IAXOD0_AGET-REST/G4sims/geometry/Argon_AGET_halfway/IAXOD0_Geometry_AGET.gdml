@@ -31,8 +31,7 @@
     <box name="CapBottomLeft" x="CapSquare_x" y="CapSquare_y" z="CapSquare_z" lunit="mm"/>
     <box name="CapBottomCentre" x="CapRect_x" y="CapRect_y" z="CapRect_z" lunit="mm"/>
     <box name="CapBottomRight" x="CapSquare_x" y="CapSquare_y" z="CapSquare_z" lunit="mm"/>
-    <box name="ResCapLeft" x="ResCapRect_x" y="ResCapRect_y" z="ResCapRect_z" lunit="mm"/>
-    <box name="ResCapRight" x="ResCapRect_x" y="ResCapRect_y" z="ResCapRect_z" lunit="mm"/>
+    <box name="ResTopCentre" x="ResRect_x" y="ResRect_y" z="ResRect_z" lunit="mm"/>
     <box name="Chip" x="Chip_x" y="Chip_y" z="Chip_z" lunit="mm"/>
 
     <!-- Chamber -->
@@ -370,7 +369,7 @@
 
     <volume name="ResTopCentreVolume">
         <materialref ref="Copper"/>
-        <solidref ref="ResCapLeft"/>
+        <solidref ref="ResTopCentre"/>
     </volume>
 
     <!-- Physical volume definition (volume and position assignment) ..............................-->
