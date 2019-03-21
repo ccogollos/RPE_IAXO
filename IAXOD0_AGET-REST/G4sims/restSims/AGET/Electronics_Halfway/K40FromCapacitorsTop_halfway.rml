@@ -13,10 +13,10 @@
 <environment>
 
     <!-- <variable name="REST_DATAPATH" value="/media/storage/restData" overwrite="true" /> -->
-    <variable name="REST_DATAPATH" value="/home/zar30001/cristian/AGET_Sims/data" overwrite="true" />
+    <variable name="REST_DATAPATH" value="/home/zar30001/cristian/RPE_IAXO/data" overwrite="true" />
     <variable name="EXPERIMENT" value="IAXOD0" overwrite="false" />
     <variable name="VERSION" value="1.0" overwrite="false" />
-    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST" overwrite="true" />
+    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST" overwrite="true" />
     <variable name="IAXOD0_DATAPATH" value="${REST_DATAPATH}/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="true" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="true" />
@@ -29,7 +29,7 @@
     <variable name="REST_ISOTOPE" value="K40" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
     <variable name="REST_VOLUME" value="CapTopCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" --> 
 
-    <variable name="DIR_DATA" value="K40_Chip" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
+    <variable name="DIR_DATA" value="K40_CapacitorsTop" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
     
 </environment>
 

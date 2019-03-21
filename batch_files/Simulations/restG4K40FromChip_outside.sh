@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST/G4sims/restSims/AGET
+cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET
 
 restG4 K40FromChip_outside.rml
