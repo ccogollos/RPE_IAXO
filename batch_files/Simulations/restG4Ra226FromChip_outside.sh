@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET
+cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_Outside
 
 restG4 Ra226FromChip_outside.rml

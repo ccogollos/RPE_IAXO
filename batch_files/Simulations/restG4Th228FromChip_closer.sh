@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET
+cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_Closer
 
 restG4 Th228FromChip_closer.rml
