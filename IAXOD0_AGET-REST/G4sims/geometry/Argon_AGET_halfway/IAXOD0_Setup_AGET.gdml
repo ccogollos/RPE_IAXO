@@ -89,7 +89,7 @@
     <variable name="AGET_size_y" value="1"/>
     <variable name="AGET_size_z" value="143"/>
 
-    <variable name="AGET_Separation" value="raquetteLength/2.0"/>
+    <variable name="AGET_Separation" value="raquetteLength/4.0"/>
 
     <variable name="AGET_pos_x" value="-chamberRadius-AGET_size_x/2.-copperChamberThickness-teflonChamberThickness-AGET_Separation"/>
     <variable name="AGET_pos_y" value="0"/>
