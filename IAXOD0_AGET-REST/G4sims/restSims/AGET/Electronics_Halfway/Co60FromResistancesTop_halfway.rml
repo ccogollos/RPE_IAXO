@@ -25,11 +25,11 @@
 
     <!-- Default for G4 simulations (defined in .sh script)-->
    
-    <variable name="REST_NEVENTS" value="100000000" overwrite="true" />
-    <variable name="REST_ISOTOPE" value="Ra228" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
-    <variable name="REST_VOLUME" value="CapTopCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" --> 
+    <variable name="REST_NEVENTS" value="500000000" overwrite="true" />
+    <variable name="REST_ISOTOPE" value="Co60" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
+    <variable name="REST_VOLUME" value="ResTopCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" --> 
 
-    <variable name="DIR_DATA" value="Ra228_CapacitorsTop" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
+    <variable name="DIR_DATA" value="Co60_ResistancesTop" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
     
 </environment>
 
@@ -44,7 +44,7 @@
     <parameter name="experiment" value="${EXPERIMENT}"/>
     <parameter name="runType" value="simulation"/>
     <parameter name="runNumber" value="auto"/>
-    <parameter name="runTag" value="${REST_ISOTOPE}_CapacitorsTop"/>
+    <parameter name="runTag" value="${REST_ISOTOPE}_ResistancesTop"/>
     <parameter name="runDescription" value="We launch ${REST_ISOTOPE} decays from ${REST_VOLUME}."/>
     <parameter name="user" value="${USER}"/>
     <parameter name="verboseLevel" value="3"/>
