@@ -516,17 +516,17 @@
 
         <physvol name="CapBottomCentrePhysVolume">
           <volumeref ref="CapBottomCentreVolume"/>
-          <position name="CapBottomCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.-Chip_z"/>
+          <position name="CapBottomCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.*1.2-Chip_z*1.2"/>
         </physvol>
 
         <physvol name="ResTopCentrePhysVolume">
           <volumeref ref="ResTopCentreVolume"/>
-          <position name="ResTopCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z+CapRect_z/2+ResRect_z/2."/>
+          <position name="ResTopCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z+CapRect_z/2*1.2+ResRect_z/2.*1.2"/>
         </physvol>
 
         <physvol name="ChipVolume">
           <volumeref ref="ChipVolume"/>
-          <position name="ChipPosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.-Chip_z/2."/>
+          <position name="ChipPosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.-Chip_z/2.*1.2"/>
         </physvol>
 
     </volume>
