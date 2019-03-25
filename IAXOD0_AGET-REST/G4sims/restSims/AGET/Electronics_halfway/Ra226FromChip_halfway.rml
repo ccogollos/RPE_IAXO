@@ -25,7 +25,7 @@
 
     <!-- Default for G4 simulations (defined in .sh script)-->
    
-    <variable name="REST_NEVENTS" value="100000000" overwrite="true" />
+    <variable name="REST_NEVENTS" value="500000000" overwrite="true" />
     <variable name="REST_ISOTOPE" value="Ra226" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
     <variable name="REST_VOLUME" value="ChipVolume" overwrite="true" /> <!-- Options: "ChipVolume" --> 
 
