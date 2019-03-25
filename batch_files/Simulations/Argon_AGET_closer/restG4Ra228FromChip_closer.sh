@@ -2,8 +2,8 @@
 
 #
 
-#SBATCH -J  SimK40FromCapacitorsTop_halfway               # job name
-#SBATCH -o  SimK40FromCapacitorsTop_halfway.o%j           # output and error file name (%j expands to jobID)
+#SBATCH -J  SimRa228FromChip_closer               # job name
+#SBATCH -o  SimRa228FromChip_closer.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 
@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_Halfway
+cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_closer
 
-restG4 K40FromCapacitorsTop_halfway.rml
+restG4 Ra228FromChip_closer.rml

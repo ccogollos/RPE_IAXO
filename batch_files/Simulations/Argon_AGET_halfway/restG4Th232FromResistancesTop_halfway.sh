@@ -2,8 +2,8 @@
 
 #
 
-#SBATCH -J  SimRa226FromChip_outside               # job name
-#SBATCH -o  SimRa226FromChip_outside.o%j           # output and error file name (%j expands to jobID)
+#SBATCH -J  SimTh232FromResistancesTop_halfway               # job name
+#SBATCH -o  SimTh232FromResistancesTop_halfway.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 
@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_Outside
+cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_halfway
 
-restG4 Ra226FromChip_outside.rml
+restG4 Th232FromResistancesTop_halfway.rml
