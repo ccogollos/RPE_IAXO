@@ -23,4 +23,4 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCs137ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_ResistancesTop/Run_simulation_Cs137fromResTopCentrePhysVolume_00264_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfwayrestSimManagerCs137ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_ResistancesTop/Run_simulation_Cs137fromResTopCentrePhysVolume_00264_Version_2.1.6.root

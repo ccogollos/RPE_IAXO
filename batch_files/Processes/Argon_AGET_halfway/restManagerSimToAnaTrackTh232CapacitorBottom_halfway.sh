@@ -23,5 +23,5 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerTh232CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_CapacitorBottom/Run_simulation_Th232fromCapBottomCentrePhysVolume_00275_Version_2.1.6.root
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerTh232CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_CapacitorBottom/Run_simulation_Th232fromCapBottomCentrePhysVolume_00302_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfwayrestSimManagerTh232CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_CapacitorBottom/Run_simulation_Th232fromCapBottomCentrePhysVolume_00275_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfwayrestSimManagerTh232CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_CapacitorBottom/Run_simulation_Th232fromCapBottomCentrePhysVolume_00302_Version_2.1.6.root
