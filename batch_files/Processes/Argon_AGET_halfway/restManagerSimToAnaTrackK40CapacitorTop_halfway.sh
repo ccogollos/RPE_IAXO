@@ -23,4 +23,4 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfwayrestSimManagerK40CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsTop/Run_simulation_K40fromCapTopCentrePhysVolume_00269_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerK40CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsTop/Run_simulation_K40fromCapTopCentrePhysVolume_00269_Version_2.1.6.root
