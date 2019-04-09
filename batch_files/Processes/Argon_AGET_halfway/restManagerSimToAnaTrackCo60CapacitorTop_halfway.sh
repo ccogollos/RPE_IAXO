@@ -23,10 +23,4 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Run_simulation_Co60fromCapTopCentrePhysVolume_00181_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Run_simulation_Co60fromCapTopCentrePhysVolume_00188_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Run_simulation_Co60fromCapTopCentrePhysVolume_00193_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Run_simulation_Co60fromCapTopCentrePhysVolume_00196_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60CapacitorsTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Run_simulation_Co60fromCapTopCentrePhysVolume_00259_Version_2.1.6.root

@@ -23,10 +23,4 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Run_simulation_Co60fromResTopCentrePhysVolume_00181_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Run_simulation_Co60fromResTopCentrePhysVolume_00188_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Run_simulation_Co60fromResTopCentrePhysVolume_00193_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Run_simulation_Co60fromResTopCentrePhysVolume_00196_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerCo60ResistancesTop_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Run_simulation_Co60fromResTopCentrePhysVolume_00262_Version_2.1.6.root

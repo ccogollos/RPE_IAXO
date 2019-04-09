@@ -23,6 +23,5 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerRa226CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorBottom/Run_simulation_Ra226fromCapBottomCentrePhysVolume_00213_Version_2.1.6.root
-
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerRa226CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorBottom/Run_simulation_Ra226fromCapBottomCentrePhysVolume_00218_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerRa226CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorBottom/Run_simulation_Ra226fromCapBottomCentrePhysVolume_00283_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerRa226CapacitorsBottom_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorBottom/Run_simulation_Ra226fromCapBottomCentrePhysVolume_00282_Version_2.1.6.root
