@@ -23,6 +23,6 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerTh228Chip_halfway.rml --f /home/zar30001/cristian/AGET_Sims/data/IAXOD0/Argon_AGET_halfway/Th228_Chip/Run_simulation_Th228fromChipVolume_00214_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerU238Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_Chip/Run_simulation_U238fromChipVolume_00217_Version_2.1.6.root
 
-restManager --c /home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerTh228Chip_halfway.rml --f /home/zar30001/cristian/AGET_Sims/data/IAXOD0/Argon_AGET_halfway/Th228_Chip/Run_simulation_Th228fromChipVolume_00221_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/restSimManagerU238Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_Chip/Run_simulation_U238fromChipVolume_00231_Version_2.1.6.root
