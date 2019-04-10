@@ -12,7 +12,7 @@
     <variable name="IAXOD0_DATAPATH" value="/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />
     <variable name="DIR_DATA" value="Th228_CapacitorsBottom" overwrite="true" />
-    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/Plots" overwrite="true" />
     <variable name="label1" value="Th228_CapacitorsBottom" overwrite="true" />
     <variable name="label2" value="Th228_CapacitorsTop" overwrite="true" />
     <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
@@ -55,43 +55,43 @@
 
 <!-- Defining the different plots -->
 
-    <plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
+    <plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas.root" value="ON" >
         <variable name="g4Ana.gasVolumeEDep" range="(0,100)" nbins="200"/>  
     </plot>
  
-    <plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="mm" ylabel="mm" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+    <plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="mm" ylabel="mm" logscale="false" save="${DIR_PLOT}/temp/XY.root" value="ON" >
         <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
         <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>    
     </plot>
  
-    <plot name="XZ position of track" title="XZposition of the track of maximum energy" xlabel="mm" ylabel="mm"  logscale="false" save="${DIR_PLOT}/temp/XZ${label}.root" value="ON" >
+    <plot name="XZ position of track" title="XZposition of the track of maximum energy" xlabel="mm" ylabel="mm"  logscale="false" save="${DIR_PLOT}/temp/XZ.root" value="ON" >
         <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
         <variable name="tckAna.maxZMean" range="(-16,19)" nbins="240"/>  
     </plot>
 
 
-    <plot name="XYZ position of track" title="XYZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" zlabel="Z(mm)" option="" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+    <plot name="XYZ position of track" title="XYZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" zlabel="Z(mm)" option="" logscale="false" save="${DIR_PLOT}/temp/XY.root" value="ON" >
         <variable name="tckAna.maxZMean" range="(-45,45)" nbins="240"/>
         <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>
         <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
     </plot>
 
-    <plot name="Distance to walls" title="Distance to walls " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Walls${label}.root" value="ON" >
+    <plot name="Distance to walls" title="Distance to walls " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Walls.root" value="ON" >
         <variable name="hitsAna.distanceToCylinderWall" range="(-2,50)" nbins="52" />
     </plot>
 
 
-    <plot name="Distance to bottom" title="Distance to bottom " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Bottom${label}.root" value="ON" >
+    <plot name="Distance to bottom" title="Distance to bottom " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Bottom.root" value="ON" >
          <variable name="hitsAna.distanceToCylinderBottom" range="(-2,35)" nbins="37" />
     </plot>
 
 
-    <plot name="Total Energy" title="Total Deposited Energy" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/temp/Etot${label}.root" value="ON" >
+    <plot name="Total Energy" title="Total Deposited Energy" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/temp/Etot.root" value="ON" >
         <variable name="g4Ana.totalEdep" range="(0,2000)" nbins="200"/>   
     </plot>
 
 
-    <plot name="number of tracks" title="Number of tracks " xlabel="#tracks" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Tracks${label}.root" value="ON" >
+    <plot name="number of tracks" title="Number of tracks " xlabel="#tracks" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Tracks.root" value="ON" >
         <variable name="tckAna.nTracksXYZ" range="(0,10)" nbins="10" />
     </plot>
 
