@@ -69,12 +69,12 @@
     </plot>
 
 
-    <plot name="Total Energy" title="Total Deposited Energy" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/temp/Etot${label}.root" value="OFF" >
+    <plot name="Total Energy" title="Total Deposited Energy" xlabel="Energy(keV)" ylabel="Counts" logscale="true" save="${DIR_PLOT}/temp/Etot${label}.root" value="ON" >
         <variable name="g4Ana.totalEdep" range="(0,2000)" nbins="200"/>   
     </plot>
 
 
-    <plot name="number of tracks" title="Number of tracks " xlabel="#tracks" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Tracks${label}.root" value="OFF" >
+    <plot name="number of tracks" title="Number of tracks " xlabel="#tracks" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Tracks${label}.root" value="ON" >
         <variable name="tckAna.nTracksXYZ" range="(0,10)" nbins="10" />
     </plot>
 
