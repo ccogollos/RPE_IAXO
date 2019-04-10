@@ -13,7 +13,8 @@
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />
     <variable name="DIR_DATA" value="Th228_CapacitorsBottom" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
-    <variable name="label" value="Th228_CapacitorsBottom" overwrite="true" />
+    <variable name="label1" value="Th228_CapacitorsBottom" overwrite="true" />
+    <variable name="label2" value="Th228_CapacitorsTop" overwrite="true" />
     <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
     <variable name="CutDtW" value="ON" overwrite="true" />
     <variable name="labelTrack" value="1" overwrite="true" />
@@ -22,14 +23,15 @@
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_CapacitorsBottom_00272_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label1}/TrackAnalysis/Run_TrackAnalysis_Th228_CapacitorsBottom_00272_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label2}/TrackAnalysis/Run_TrackAnalysis_Th228_CapacitorsTop_00272_Version_2.1.6.root" />
 
 
 <!-- Configuring the plots cuts and display -->
 
-    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+    <parameter name="plotMode" value="compare" /> <!-- plotModes available : compare, add -->
 
-    <canvas size="(1200,800)" divide="(4,2)" save="${DIR_PLOT}/${label}_BG_plots.root" />
+    <canvas size="(1200,800)" divide="(4,2)" save="$${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label1}_{$label2}_comp_BG_plots.root" />
 
     <!-- <canvas size="(800,600)" save="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Plots/RoI0-10_allTracks_allDtW.root" /> -->
 
