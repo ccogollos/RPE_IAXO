@@ -42,9 +42,9 @@
     <globalCut variable="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
     <globalCut variable="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
 -->
-    <!-- Track cuts -->
+    <!-- Track cuts 
     <globalCut variable="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
-
+-->
     <!-- Energy cuts 
     <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
     <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="OFF"/>
