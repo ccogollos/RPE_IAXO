@@ -66,8 +66,8 @@
     
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/inputData/definitions/gases.rml" > 
-    <parameter name="readoutFile" value="${IAXOD0_G4PATH}/restProcesses/${READOUT_ROOTFILE}" >
-    <parameter name="processesFile" value="${IAXOD0_G4PATH}/restProcesses/G4processes.rml" >
+    <parameter name="readoutFile" value="${IAXOD0_G4PATH}/restProcesses/Electronics_halfway/${READOUT_ROOTFILE}" >
+    <parameter name="processesFile" value="${IAXOD0_G4PATH}/restProcesses/Electronics_halfway/G4processes.rml" >
     <parameter name="tasksFile" value="${IAXOD0_G4PATH}/restPlots/plots.rml" >
 
     <!-- Adding metadata -->
