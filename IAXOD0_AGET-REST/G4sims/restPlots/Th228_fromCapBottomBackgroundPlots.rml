@@ -7,22 +7,17 @@
 <!--Environment variables block -->
 
 <environment>
-
     <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/" overwrite="true" />
     <variable name="IAXOD0_DATAPATH" value="/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />
     <variable name="DIR_DATA" value="Th228_CapacitorsBottom" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
     <variable name="label" value="Th228_CapacitorsBottom" overwrite="true" />
-    <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
-    <variable name="CutDtW" value="ON" overwrite="true" />
-    <variable name="labelTrack" value="1" overwrite="true" />
-    <variable name="CutTrack" value="ON" overwrite="true" />
 </environment>
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_CapacitorsBottom_00272_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_Th228_CapacitorsBottom_00259_Version_2.1.6.root" />
 
 
 <!-- Configuring the plots cuts and display -->
@@ -33,23 +28,16 @@
 
     <!-- <canvas size="(800,600)" save="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Plots/RoI0-10_allTracks_allDtW.root" /> -->
 
-
-    <!-- Cuts to remove events out of the fiducial cylinder 
-    <globalCut variable="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
-    <globalCut variable="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
-    -->
-    <!-- Spatial cuts 
-    <globalCut variable="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
-    <globalCut variable="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
--->
-    <!-- Track cuts -->
-    <globalCut variable="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
-
-    <!-- Energy cuts 
+    <globalCut name="tckAna.nTracksXYZ" condition="==1" value="OFF"/> 
+    
+<!--
+    <globalCut name="hitsAna.distanceToCylinderWall" condition=">40" value="OFF"/>
+    <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
+    <globalCut name="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
+    <globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="ON"/>
     <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
-    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="OFF"/>
 -->
-
 
 <!-- Defining the different plots -->
 

@@ -33,11 +33,14 @@
 
     <!-- <canvas size="(800,600)" save="/home/zar30001/elisa/data/IAXOD0/Argon/Muons/Plots/RoI0-10_allTracks_allDtW.root" /> -->
 
+    <globalCut variable="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
 
-    <!-- Cuts to remove events out of the fiducial cylinder 
+
+
+    <!-- Cuts to remove events out of the fiducial cylinder -->
     <globalCut variable="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
     <globalCut variable="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
-    -->
+
     <!-- Spatial cuts 
     <globalCut variable="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
     <globalCut variable="hitsAna.distanceToCylinderBottom" condition=">5" value="OFF"/>
