@@ -1,0 +1,84 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- This plot template shows an example of analysisPlot implementation.
+     The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
+<section TRestAnalysisPlot name="Template" title="Basic Plots">
+        
+
+<environment>
+
+    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/" overwrite="true" />
+
+    <variable name="Isotope" value="U238" />
+    <variable name="Component" value="Capacitors" />
+    <variable name="Location" value="Top" />
+
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />
+    <variable name="DIR_DATA" value="${Isotope}_${Component}${Location}" overwrite="true" />
+    <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
+    <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
+    <variable name="CutDtW" value="ON" overwrite="true" />
+    <variable name="labelTrack" value="1" overwrite="true" />
+    <variable name="CutTrack" value="ON" overwrite="true" />
+</environment>
+
+<!-- Adding the files to plot -->
+
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00272_Version_2.1.6.root" />
+
+
+
+    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+
+    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_halfway.root" />
+
+    <!-- Cuts to remove events out of the fiducial cylinder 
+    <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>
+    <globalCut name="hitsAna.isInsideCylindricalVolume" condition="==1" value="ON"/>
+-->
+    <!-- Spatial cuts 
+    <globalCut variable="hitsAna.distanceToCylinderWall" condition=">${labelDtW}" value="${CutDtW}"/>
+    <globalCut variable="hitsAna.distanceToCylinder${Location}" condition=">5" value="OFF"/>
+-->
+    <!-- Track cuts -->
+    <globalCut name="tckAna.nTracksXYZ" condition="==${labelTrack}" value="${CutTrack}"/> 
+
+    <!-- Energy cuts 
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<7" value="OFF"/>
+-->
+
+    <!-- Plot configuration -->
+
+    <plot name="Energy in gas" title="Deposited energy in gas by radiation emmited from ${Component}_${Location}" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
+        <variable name="g4Ana.gasVolumeEDep" range="(0,100)" nbins="100"/>  <!--Histogram with 0.1keV bins -->
+    </plot>
+
+    <plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="mm" ylabel="mm" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>    
+    </plot>
+ 
+    <plot name="XZ position of track" title="XZposition of the track of maximum energy" xlabel="mm" ylabel="mm"  logscale="false" save="${DIR_PLOT}/temp/XZ${label}.root" value="ON" >
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxZMean" range="(-16,19)" nbins="240"/>  
+    </plot>
+
+
+    <plot name="XYZ position of track" title="XYZposition of the track of maximum energy" xlabel="X(mm)" ylabel="Y(mm)" zlabel="Z(mm)" option="" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
+        <variable name="tckAna.maxZMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxYMean" range="(-45,45)" nbins="240"/>
+        <variable name="tckAna.maxXMean" range="(-45,45)" nbins="240"/>
+    </plot>
+
+    <plot name="Distance to walls" title="Distance to walls " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Walls${label}.root" value="ON" >
+        <variable name="hitsAna.distanceToCylinderWall" range="(-2,50)" nbins="52" />
+    </plot>
+
+
+    <plot name="Distance to top" title="Distance to top " xlabel="D(mm)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/Bottom${label}.root" value="ON" >
+         <variable name="hitsAna.distanceToCylinderTop" range="(-2,35)" nbins="37" />
+    </plot>
+
+</section>  

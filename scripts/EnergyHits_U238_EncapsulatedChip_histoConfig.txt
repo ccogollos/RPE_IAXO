@@ -1,0 +1,15 @@
+Number_of_files_to_be_included 1
+
+Integration_from__to_(keV)
+0.1 10
+
+Energy_resolution___at___(keV)
+5 0.01
+
+FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weight(cm2)____Name
+/home/cristian/plotfile/PlotK40_ChipEnergyHisto_Tr1.root 0.303 0.072 180000000 1.69 K40_Chip_Bckgnd
+/home/cristian/plotfile/PlotU238_ChipEnergyHisto_Tr1.root 3.2 0.072 310000000 1.69 U238_Chip_Bckgnd
+/home/cristian/plotfile/PlotRa226_ChipEnergyHisto_Tr1.root 0.176 0.072 190000000 1.69 Ra226_Chip_Bckgnd
+/home/cristian/plotfile/PlotRa228_ChipEnergyHisto_Tr1.root 0.058 0.072 210000000 1.69 Ra228_Chip_Bckgnd
+/home/cristian/plotfile/PlotTh228_ChipEnergyHisto_Tr1.root 0.173 0.072 170000000 1.69 Th228_Chip_Bckgnd
+
