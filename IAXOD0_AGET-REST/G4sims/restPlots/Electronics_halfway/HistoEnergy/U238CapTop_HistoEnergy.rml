@@ -25,7 +25,10 @@
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00272_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00289_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00292_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00293_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00296_Version_2.1.6.root" />
 
 
 

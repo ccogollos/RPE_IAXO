@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
 <!-- This plot template shows an example of analysisPlot implementation.
      The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
@@ -25,7 +25,7 @@
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00272_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00259_Version_2.1.6.root" />
 
 
 
