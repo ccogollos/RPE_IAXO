@@ -140,7 +140,10 @@ void histoSum() {
     title->SetTextFont(52);
     title->Draw();
     auto leg = new TLegend(0.7,0.1,0.9,0.3);
-    
+
+    hsum->Draw();
+    leg->AddEntry(hsum,"Total","l");
+
     for( i=0; i<nlines; i++)
     {  
         h[i]->SetStats(kFALSE);
@@ -150,7 +153,7 @@ void histoSum() {
         
         if(i==0)
         {   
-            h[i]->Draw();
+            h[i]->Draw("same");
             h[i]->GetYaxis()->SetTitle("counts/keV/cm2/day");
         }
 
@@ -159,9 +162,7 @@ void histoSum() {
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
    
-   leg->AddEntry(hsum,"Total","l");
-   
-   hsum->Draw("same");
+
    leg->Draw();
    cc->Update();
  
