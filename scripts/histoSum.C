@@ -117,11 +117,11 @@ void histoSum() {
         delete[] file;
     }
     
-    
+
     hsum=h[0];
     for (i=1; i<nlines;i++)
     {
-     hsum->Add(hsum,h[i],1,1);
+     hsum->Add(h[i]);
     }
 
     fclose(output);
