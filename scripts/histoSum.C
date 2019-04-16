@@ -53,7 +53,7 @@ void histoSum() {
     cout<<"==>Found "<<nlines<<" files to be plotted!!!"<<endl;
 
     TCanvas *cc = new TCanvas("cc","The HCOMP example",200,10,600,400);
-    TH1D *h[100], hsum;
+    TH1D *h[100], *hsum;
     TCanvas *c[100]; 
     TFile *f[100];
     Double_t MaxY[100];
