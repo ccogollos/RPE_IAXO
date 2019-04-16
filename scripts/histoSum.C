@@ -159,7 +159,8 @@ void histoSum() {
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
 
-   
+   hsum->Draw();
+   leg->AddEntry(hsum,"Total","l");
     leg->Draw();
     cc->Update();
  
