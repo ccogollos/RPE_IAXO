@@ -11,7 +11,7 @@ FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weig
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Plots/Plot_Co60_CapacitorsTop_EnergyHisto_halfway.root 0.036 0.072 500000000 1.69 Co40_Cap_Top_Bckgnd
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Plots/Plot_Co60_ResistancesTop_EnergyHisto_halfway.root 0.0021 0.072 500000000 1.69 Co40_Res_Top_Bckgnd
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_CapacitorsBottom/Plots/Plot_Cs137_CapacitorsBottom_EnergyHisto_halfway.root 0.043 0.072 500000000 1.69 Cs137_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_CapacitorsTop/Plots/Plot_Cs137_CapacitorsTop_EnergyHisto_halfway.root 0.043 0.072 500000000 1.69 Cs137_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_ResistancesTop/Plots/Plot_Cs137_ResistancesTop_EnergyHisto_halfway.root 0.043 0.072 500000000 1.69 Cs137_Res_Top_Bckgnd
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsBottom/Plots/Plot_K40_CapacitorsBottom_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 K40_Cap_Bottom_Bckgnd
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsTop/Plots/Plot_K40_CapacitorsTop_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 K40_Cap_Top_Bckgnd
 /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_ResistancesTop/Plots/Plot_K40_ResistancesTop_EnergyHisto_halfway.root 0.029 0.072 500000000 1.69 K40_Res_Top_Bckgnd
