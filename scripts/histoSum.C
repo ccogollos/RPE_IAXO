@@ -150,10 +150,10 @@ void histoSum() {
      
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
-    hsum=h[0]
+    hsum=h[0];
     for (i=1; i<nlines;i++)
     {
-     hsum->(hsum,h[i])
+     hsum->(hsum,h[i]);
     }
    
     leg->Draw();
