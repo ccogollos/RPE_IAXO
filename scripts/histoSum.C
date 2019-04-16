@@ -153,7 +153,7 @@ void histoSum() {
     hsum=h[0];
     for (i=1; i<nlines;i++)
     {
-     hsum->(hsum,h[i]);
+     hsum->Add(hsum,h[i]);
     }
    
     leg->Draw();
