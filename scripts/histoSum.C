@@ -144,23 +144,23 @@ void histoSum() {
     hsum->Draw();
     leg->AddEntry(hsum,"Total","l");
 
-    for( i=0; i<nlines; i++)
-    {  
-        h[i]->SetStats(kFALSE);
-        h[i]->SetLineColor(1+i);
+//    for( i=0; i<nlines; i++)
+//    {  
+//        h[i]->SetStats(kFALSE);
+//       h[i]->SetLineColor(1+i);
         //h[i]->SetLineColor(4+4*i);
-	h[i]->SetMaximum(MaxY_s*1.1);
+//	h[i]->SetMaximum(MaxY_s*1.1);
         
-        if(i==0)
-        {   
-            h[i]->Draw();
-            h[i]->GetYaxis()->SetTitle("counts/keV/cm2/day");
-        }
+//        if(i==0)
+//        {   
+//            h[i]->Draw();
+//            h[i]->GetYaxis()->SetTitle("counts/keV/cm2/day");
+//        }
 
-        else h[i]->Draw();
+//        else h[i]->Draw();
      
-        leg->AddEntry(h[i],name[i].c_str(),"l"); 
-    }
+//        leg->AddEntry(h[i],name[i].c_str(),"l"); 
+//    }
    
 
    leg->Draw();
