@@ -62,7 +62,7 @@ void histoSum() {
     Double_t norm[100];
     // Create some histograms.
    
-    output=fopen("/home/cristian/Histo_Scripts/histoResults.txt","a");
+    output=fopen("/home/zar30001/cristian/RPE_IAXO/scripts/histoResults.txt","a");
 
     for(i=0; i<nlines; i++)
     {
