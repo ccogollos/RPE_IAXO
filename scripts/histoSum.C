@@ -158,11 +158,12 @@ void histoSum() {
      
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
-
-   hsum->Draw();
+   
    leg->AddEntry(hsum,"Total","l");
-    leg->Draw();
-    cc->Update();
+   
+   hsum->Draw("same");
+   leg->Draw();
+   cc->Update();
  
     gBenchmark->Show("histoComp");
 }
