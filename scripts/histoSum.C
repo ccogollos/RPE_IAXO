@@ -122,6 +122,7 @@ void histoSum() {
     for (i=1; i<nlines;i++)
     {
      hsum->Add(h[i]);
+     MaxY[i]= h[i]->GetBinContent(h[i]->GetMaximumBin());
     }
 
     fclose(output);
