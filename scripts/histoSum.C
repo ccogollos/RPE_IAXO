@@ -37,6 +37,7 @@ void histoComp() {
     cout<<"Integrated values from "<<iener<<" to "<<fener<<" will be given "<<endl;
     in>>info2;
     cout<<info2<<endl;
+    in>>info2;
 
     while(!in.fail()){  
        
