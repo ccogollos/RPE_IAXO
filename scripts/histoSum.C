@@ -5,14 +5,14 @@
 #include <string>
 
 
-void histoComp() {
+void histoSum() {
 //
 // To see the output of this macro, click begin_html <a href="gif/hsum.gif" >here</a> end_html
 //    Simple example illustrating how to use the C++ interpreter
 //    to fill histograms in a loop and show the graphics results
 //Author: Rene Brun
 //	
-    gBenchmark->Start("histoComp");
+    gBenchmark->Start("histoSum");
 
     string histofile;
     cout<<"File for histograms to be compared"<<endl;
@@ -62,7 +62,7 @@ void histoComp() {
     Double_t norm[100];
     // Create some histograms.
    
-    output=fopen("/home/cristian/Histo_Scripts/histoCompResults.txt","a");
+    output=fopen("/home/cristian/Histo_Scripts/histoResults.txt","a");
 
     for(i=0; i<nlines; i++)
     {
