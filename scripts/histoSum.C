@@ -153,11 +153,11 @@ void histoSum() {
         
         if(i==0)
         {   
-            h[i]->Draw("same");
+            h[i]->Draw();
             h[i]->GetYaxis()->SetTitle("counts/keV/cm2/day");
         }
 
-        else h[i]->Draw("same");
+        else h[i]->Draw();
      
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
