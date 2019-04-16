@@ -116,6 +116,13 @@ void histoSum() {
    
         delete[] file;
     }
+    
+    
+    hsum=h[0];
+    for (i=1; i<nlines;i++)
+    {
+     hsum->Add(hsum,h[i],1,1);
+    }
 
     fclose(output);
 
@@ -132,7 +139,7 @@ void histoSum() {
     title->SetTextFont(52);
     title->Draw();
     auto leg = new TLegend(0.7,0.1,0.9,0.3);
-  
+    
     for( i=0; i<nlines; i++)
     {  
         h[i]->SetStats(kFALSE);
@@ -150,11 +157,7 @@ void histoSum() {
      
         leg->AddEntry(h[i],name[i].c_str(),"l"); 
     }
-    hsum=h[0];
-    for (i=1; i<nlines;i++)
-    {
-     hsum->Add(hsum,h[i],1,1);
-    }
+
    
     leg->Draw();
     cc->Update();
