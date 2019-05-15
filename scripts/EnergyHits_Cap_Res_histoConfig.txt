@@ -1,10 +1,10 @@
-Number_of_files_to_be_included 17
+Number_of_files_to_be_included
+17
 
 Integration_from__to_(keV)
 0.1 10
 
 Energy_resolution___at___(keV)
-5 0.01
 
 FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weight(cm2)____Name
 /home/cristian/RPE_IAXO/results/histo_energy_halfway/Plot_Co60_CapacitorsBottom_EnergyHisto_halfway.root 0.036 0.072 500000000 1.69 Co40_Cap_Bottom_Bckgnd
