@@ -1,8 +1,8 @@
 // histograms filled and drawn in a loop
-#include <iostream.h>
+#include<iostream.h>
 #include<fstream>
 #include<iomanip>
-#include <string>
+#include<string>
 
 
 void histoSum() {
@@ -19,7 +19,7 @@ void histoSum() {
     cin>>histofile;
 
     ifstream in;
-    //in.open("HistoVessel.txt");
+    //in.open("Input_file.txt");
     in.open(histofile.c_str());
     cout<<"file opened"<<endl;
     
@@ -60,7 +60,7 @@ void histoSum() {
     Double_t MaxY_s=0;
     Int_t NEntries[100];
     Double_t norm[100];
-    // Create some histograms.
+    
    
     output=fopen("/home/zar30001/cristian/RPE_IAXO/scripts/histoResults.txt","a");
 
@@ -85,8 +85,8 @@ void histoSum() {
         NEntries[i]=h[i]->GetEntries();
         cout << "NEntries : " << NEntries[i] << endl;
 
-        ierror[i]= h[i]->Integral(iener*10+1,fener*10+1);
-        cout << "Integral: "  << ierror[i] << endl;
+        integral[i]= h[i]->Integral(iener*10+1,fener*10+1);
+        cout << "Integral: "  << integral[i] << endl;
 
         ierror[i]= TMath::Sqrt(h[i]->Integral(iener*10+1,fener*10+1));
         cout << "Integral error: "  << ierror[i] << endl;

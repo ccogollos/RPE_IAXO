@@ -1,7 +1,7 @@
-Number_of_files_to_be_included 1
+Number_of_files_to_be_included 17
 
 Integration_from__to_(keV)
-1 100
+0.1 10
 
 Energy_resolution___at___(keV)
 5 0.01
@@ -24,6 +24,3 @@ FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weig
 /home/cristian/RPE_IAXO/results/histo_energy_halfway/Plot_U238_CapacitorsBottom_EnergyHisto_halfway.root 10.4 0.072 400000000 1.69 U238_Cap_Bottom_Bckgnd
 /home/cristian/RPE_IAXO/results/histo_energy_halfway/Plot_U238_CapacitorsTop_EnergyHisto_halfway.root 10.4 0.072 400000000 1.69 U238_Cap_Top_Bckgnd
 /home/cristian/RPE_IAXO/results/histo_energy_halfway/Plot_U238_ResistancesTop_EnergyHisto_halfway.root 0.852 0.072 400000000 1.69 U238_Res_Top_Bckgnd
-
-
-
