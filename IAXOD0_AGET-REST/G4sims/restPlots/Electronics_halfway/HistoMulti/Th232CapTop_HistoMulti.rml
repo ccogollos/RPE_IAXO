@@ -52,7 +52,7 @@
     <!-- Plot configuration -->
 
     <plot name="Energy in gas" title="Deposited energy in gas by radiation emmited from ${Component}_${Location}" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${label}.root" value="ON" >
-        <variable name="g4Ana.gasVolumeEDep" range="(0,100)" nbins="100"/>  <!--Histogram with 0.1keV bins -->
+        <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>  <!--Histogram with 0.1keV bins -->
     </plot>
 
     <plot name="XY position of track" title="XY position of the track of maximum energy" xlabel="mm" ylabel="mm" logscale="false" save="${DIR_PLOT}/temp/XY${label}.root" value="ON" >
