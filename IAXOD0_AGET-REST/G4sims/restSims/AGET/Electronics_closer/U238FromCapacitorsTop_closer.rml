@@ -13,23 +13,23 @@
 <environment>
 
     <!-- <variable name="REST_DATAPATH" value="/media/storage/restData" overwrite="true" /> -->
-    <variable name="REST_DATAPATH" value="/home/zar30001/cristian/AGET_Sims/data" overwrite="true" />
+    <variable name="REST_DATAPATH" value="/home/zar30001/cristian/RPE_IAXO/data" overwrite="true" />
     <variable name="EXPERIMENT" value="IAXOD0" overwrite="false" />
     <variable name="VERSION" value="1.0" overwrite="false" />
-    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/AGET_Sims/IAXOD0_AGET-REST" overwrite="true" />
+    <variable name="IAXOD0_PATH" value="/home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST" overwrite="true" />
     <variable name="IAXOD0_DATAPATH" value="${REST_DATAPATH}/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="true" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="true" />
-    <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="true" />   <!-- options "Argon" or "Xenon" -->
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />   <!-- options "Argon" or "Xenon" -->
     <variable name="IAXOD0_GAS"   value="Argon-Isobutane 2Pct 10-10E3V/cm" overwrite="true" />  <!-- options "Argon-Isobutane 2Pct 10-10E3V/cm", "Xenon-Isobutane 2Pct 10-10E3V/cm" or any other gas in gases.rml file-->
 
     <!-- Default for G4 simulations (defined in .sh script)-->
    
-    <variable name="REST_NEVENTS" value="1000000" overwrite="true" />
-    <variable name="REST_ISOTOPE" value="Ra228" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
-    <variable name="REST_VOLUME" value="ChipVolume" overwrite="true" /> <!-- Options: "ChipVolume" --> 
+    <variable name="REST_NEVENTS" value="10000000" overwrite="true" />
+    <variable name="REST_ISOTOPE" value="U238" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
+    <variable name="REST_VOLUME" value="CapTopCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" -->  
 
-    <variable name="DIR_DATA" value="Ra228_Chip" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
+    <variable name="DIR_DATA" value="U238_CapacitorsTop" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
     
 </environment>
 
@@ -44,7 +44,7 @@
     <parameter name="experiment" value="${EXPERIMENT}"/>
     <parameter name="runType" value="simulation"/>
     <parameter name="runNumber" value="auto"/>
-    <parameter name="runTag" value="${REST_ISOTOPE}_Chip"/>
+    <parameter name="runTag" value="${REST_ISOTOPE}_CapacitorsTop"/>
     <parameter name="runDescription" value="We launch ${REST_ISOTOPE} decays from ${REST_VOLUME}."/>
     <parameter name="user" value="${USER}"/>
     <parameter name="verboseLevel" value="3"/>
