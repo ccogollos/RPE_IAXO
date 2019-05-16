@@ -139,7 +139,7 @@ void histoSum() {
     title->SetFillColor(16);
     title->SetTextFont(52);
     title->Draw();
-    auto leg = new TLegend(0.8,0.2,0.9,0.3);
+    auto leg = new TLegend(0.8,0.1,0.9,0.15);
 
     hsum->Draw();
     leg->AddEntry(hsum,"Total","l");
