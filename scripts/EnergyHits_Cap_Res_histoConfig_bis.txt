@@ -7,20 +7,20 @@ Integration_from__to_(keV)
 Energy_resolution___at___(keV)
 
 FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weight(cm2)____Name
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsBottom/Plots/Plot_Co60_CapacitorsBottom_EnergyHisto_halfway.root 0.036 0.072 500000000 1.69 Co40_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Plots/Plot_Co60_CapacitorsTop_EnergyHisto_halfway.root 0.036 0.072 500000000 1.69 Co40_Cap_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Plots/Plot_Co60_ResistancesTop_EnergyHisto_halfway.root 0.0021 0.072 500000000 1.69 Co40_Res_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_CapacitorsBottom/Plots/Plot_Cs137_CapacitorsBottom_EnergyHisto_halfway.root 0.043 0.072 500000000 1.69 Cs137_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_ResistancesTop/Plots/Plot_Cs137_ResistancesTop_EnergyHisto_halfway.root 0.043 0.072 500000000 1.69 Cs137_Res_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsBottom/Plots/Plot_K40_CapacitorsBottom_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 K40_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsTop/Plots/Plot_K40_CapacitorsTop_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 K40_Cap_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_ResistancesTop/Plots/Plot_K40_ResistancesTop_EnergyHisto_halfway.root 0.029 0.072 500000000 1.69 K40_Res_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorsBottom/Plots/Plot_Ra226_CapacitorsBottom_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 Ra226_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorsTop/Plots/Plot_Ra226_CapacitorsTop_EnergyHisto_halfway.root 5.29 0.072 500000000 1.69 Ra226_Cap_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_CapacitorsBottom/Plots/Plot_Th228_CapacitorsBottom_EnergyHisto_halfway.root 8.75 0.072 500000000 1.69 Th228_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_CapacitorsTop/Plots/Plot_Th228_CapacitorsTop_EnergyHisto_halfway.root 8.75 0.072 500000000 1.69 Th228_Cap_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_ResistancesTop/Plots/Plot_Th228_ResistancesTop_EnergyHisto_halfway.root 0.0041 0.072 500000000 1.69 Th228_Res_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_ResistancesTop/Plots/Plot_Th232_ResistancesTop_EnergyHisto_halfway.root 0.014 0.072 500000000 1.69 Th232_Res_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_CapacitorsBottom/Plots/Plot_U238_CapacitorsBottom_EnergyHisto_halfway.root 10.4 0.072 400000000 1.69 U238_Cap_Bottom_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_CapacitorsTop/Plots/Plot_U238_CapacitorsTop_EnergyHisto_halfway.root 10.4 0.072 400000000 1.69 U238_Cap_Top_Bckgnd
-/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_ResistancesTop/Plots/Plot_U238_ResistancesTop_EnergyHisto_halfway.root 0.852 0.072 400000000 1.69 U238_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsBottom/Plots/Plot_Co60_CapacitorsBottom_EnergyHisto_halfway.root 0.000036 21 500000000 1.69 Co40_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_CapacitorsTop/Plots/Plot_Co60_CapacitorsTop_EnergyHisto_halfway.root 0.000036 64 500000000 1.69 Co40_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Co60_ResistancesTop/Plots/Plot_Co60_ResistancesTop_EnergyHisto_halfway.root 0.0000021 128 500000000 1.69 Co40_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_CapacitorsBottom/Plots/Plot_Cs137_CapacitorsBottom_EnergyHisto_halfway.root 0.000043 21 500000000 1.69 Cs137_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Cs137_ResistancesTop/Plots/Plot_Cs137_ResistancesTop_EnergyHisto_halfway.root 0.0000015 128 500000000 1.69 Cs137_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsBottom/Plots/Plot_K40_CapacitorsBottom_EnergyHisto_halfway.root 0.00529 21 500000000 1.69 K40_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_CapacitorsTop/Plots/Plot_K40_CapacitorsTop_EnergyHisto_halfway.root 0.00529 64 500000000 1.69 K40_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/K40_ResistancesTop/Plots/Plot_K40_ResistancesTop_EnergyHisto_halfway.root 0.000029 128 500000000 1.69 K40_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorsBottom/Plots/Plot_Ra226_CapacitorsBottom_EnergyHisto_halfway.root 0.00529 21 500000000 1.69 Ra226_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_CapacitorsTop/Plots/Plot_Ra226_CapacitorsTop_EnergyHisto_halfway.root 0.00529 64 500000000 1.69 Ra226_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_CapacitorsBottom/Plots/Plot_Th228_CapacitorsBottom_EnergyHisto_halfway.root 0.00875 21 500000000 1.69 Th228_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_CapacitorsTop/Plots/Plot_Th228_CapacitorsTop_EnergyHisto_halfway.root 0.00875 64 500000000 1.69 Th228_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th228_ResistancesTop/Plots/Plot_Th228_ResistancesTop_EnergyHisto_halfway.root 0.0000041 128 500000000 1.69 Th228_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Th232_ResistancesTop/Plots/Plot_Th232_ResistancesTop_EnergyHisto_halfway.root 0.000014 128 500000000 1.69 Th232_Res_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_CapacitorsBottom/Plots/Plot_U238_CapacitorsBottom_EnergyHisto_halfway.root 0.0104 21 400000000 1.69 U238_Cap_Bottom_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_CapacitorsTop/Plots/Plot_U238_CapacitorsTop_EnergyHisto_halfway.root 0.0104 64 400000000 1.69 U238_Cap_Top_Bckgnd
+/home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/U238_ResistancesTop/Plots/Plot_U238_ResistancesTop_EnergyHisto_halfway.root 0.000852 128 400000000 1.69 U238_Res_Top_Bckgnd
