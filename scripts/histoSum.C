@@ -91,7 +91,7 @@ void histoSum() {
         ierror[i]= TMath::Sqrt(h[i]->Integral(iener*10+1,fener*10+1));
         cout << "Integral error: "  << ierror[i] << endl;
 
-        norm[i] = b[i]*w[i]*60*60*24/(ie[i]*ac[i]);
+        norm[i] = b[i]*w[i]/(ie[i]*ac[i]);
         cout << "norm : "  << norm[i] << endl;
 
         h[i]->Scale(norm[i]); 
@@ -142,6 +142,7 @@ void histoSum() {
     auto leg = new TLegend(0.8,0.1,0.9,0.15);
 
     hsum->Draw();
+    hsum->GetYaxis()->SetTitle("counts/(keV*cm2*s)");
     leg->AddEntry(hsum,"Total","l");
 
 //    for( i=0; i<nlines; i++)
