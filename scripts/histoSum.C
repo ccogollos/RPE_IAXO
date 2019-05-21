@@ -164,7 +164,7 @@ void histoSum() {
 //    }
    
 
-   leg->Draw();
+//   leg->Draw();
    cc->Update();
  
     gBenchmark->Show("histoComp");
