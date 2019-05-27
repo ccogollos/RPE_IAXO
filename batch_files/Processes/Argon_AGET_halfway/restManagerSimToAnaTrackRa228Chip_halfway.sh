@@ -23,4 +23,8 @@
 
 source ~/.bashrc
 
-restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00310_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00343_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00344_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00345_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00346_Version_2.1.6.root
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa228Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/Run_simulation_Ra228fromChipVolume_00347_Version_2.1.6.root
