@@ -147,9 +147,9 @@ void histoSum() {
     title->SetTextFont(52);
     title->Draw();
     auto leg = new TLegend(0.8,0.1,0.9,0.15);
-
-    hsum->Draw();
+    
     hsum->SetStats(0)
+    hsum->Draw();
     hsum->GetYaxis()->SetTitle("counts/(keV*cm2*s)");
     leg->AddEntry(hsum,"Total","l");
 
