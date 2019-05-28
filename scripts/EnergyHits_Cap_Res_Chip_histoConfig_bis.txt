@@ -2,7 +2,7 @@ Number_of_files_to_be_included
 22
 
 Integration_from__to_(keV)
-0.1 10
+0.1 7
 
 Energy_resolution___at___(keV)
 
