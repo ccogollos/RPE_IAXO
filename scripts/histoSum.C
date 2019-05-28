@@ -60,6 +60,7 @@ void histoSum() {
     Double_t MaxY_s=0;
     Int_t NEntries[100];
     Double_t norm[100];
+    Double_t int_total=0, int_error_total=0;
     
    
     output=fopen("/home/zar30001/cristian/RPE_IAXO/scripts/histoResults.txt","a");
@@ -106,6 +107,10 @@ void histoSum() {
         h[i]->Scale(10); //to express everything in c/keV/kg/day
         //MaxY[i]= h[i]->GetMaximum(h[i]->GetEntries());
         MaxY[i]= h[i]->GetBinContent(h[i]->GetMaximumBin());
+        
+        int_total=int_total+integral[i];
+        int_error_total=int_error_total+ierror[i]*ierror[i];
+
 
         cout << "MaxY : "  << MaxY[i] << endl;
         
@@ -117,6 +122,8 @@ void histoSum() {
         delete[] file;
     }
     
+    int_error_total=sqrt(int_error_total);
+    cout<<"Total: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
 
     hsum=h[0];
     for (i=1; i<nlines;i++)
