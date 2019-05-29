@@ -126,26 +126,12 @@ void histoSum() {
     int_error_total=sqrt(int_error_total);
     cout<<"Total: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
 
-    hsum=h[0];
-    int_total= hsum->Integral(iener*10+1,fener*10+1);
-    int_error_total= TMath::Sqrt(hsum->Integral(iener*10+1,fener*10+1));
-    cout<<"Total2: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
 
-    TAxis *axis = hsum->GetXaxis();
-    int bmin = axis->FindBin(iener); //in your case xmin=-1.5
-    int bmax = axis->FindBin(fener); //in your case xmax=0.8
-    int_total = hsum->Integral(bmin,bmax);
-    int_total -= hsum->GetBinContent(bmin)*(xmin-axis->GetBinLowEdge(bmin))/axis->GetBinWidth(bmin);
-    int_total -= hsum->GetBinContent(bmax)*(axis->GetBinUpEdge(bmax)-xmax)/axis->GetBinWidth(bmax);
-    int_error_total = TMath::Sqrt(hsum->Integral(bmin,bmax));
-    int_error_total -= hsum->GetBinContent(bmin)*(xmin-axis->GetBinLowEdge(bmin))/axis->GetBinWidth(bmin);
-    int_error_total -= hsum->GetBinContent(bmax)*(axis->GetBinUpEdge(bmax)-xmax)/axis->GetBinWidth(bmax);
-    cout<<"Total3: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
     
 
 
 
-
+    hsum=h[0];
     for (i=1; i<nlines;i++)
     {
      hsum->Add(h[i]);
@@ -153,6 +139,22 @@ void histoSum() {
     }
 
     fclose(output);
+
+
+    int_total= hsum->Integral(iener*10+1,fener*10+1);
+    int_error_total= TMath::Sqrt(hsum->Integral(iener*10+1,fener*10+1));
+    cout<<"Total2: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
+
+    TAxis *axis = hsum->GetXaxis();
+    int bmin = axis->FindBin(iener);
+    int bmax = axis->FindBin(fener);
+    int_total = hsum->Integral(bmin,bmax);
+    int_total -= hsum->GetBinContent(bmin)*(iener-axis->GetBinLowEdge(bmin))/axis->GetBinWidth(bmin);
+    int_total -= hsum->GetBinContent(bmax)*(axis->GetBinUpEdge(bmax)-fener)/axis->GetBinWidth(bmax);
+    int_error_total = TMath::Sqrt(hsum->Integral(bmin,bmax));
+    int_error_total -= hsum->GetBinContent(bmin)*(iener-axis->GetBinLowEdge(bmin))/axis->GetBinWidth(bmin);
+    int_error_total -= hsum->GetBinContent(bmax)*(axis->GetBinUpEdge(bmax)-fener)/axis->GetBinWidth(bmax);
+    cout<<"Total3: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
 
     for(i=0; i<nlines; i++)
     {
