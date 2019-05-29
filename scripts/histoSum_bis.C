@@ -141,8 +141,8 @@ void histoSum() {
     fclose(output);
 
 
-    int_total= hsum->Integral(iener*10+1,fener*10+1);
-    int_error_total= TMath::Sqrt(hsum->Integral(iener*10+1,fener*10+1));
+    int_total= hsum->Integral(iener*10+1,fener*10+1)/(fener-iener);
+    int_error_total= TMath::Sqrt(hsum->Integral(iener*10+1,fener*10+1)/(fener-iener));
     cout<<"Total2: "<<int_total<<" counts/keV/cm2/day in range ("<<iener<<"-"<<fener<<") keV and error "<<int_error_total<<endl;
 
     TAxis *axis = hsum->GetXaxis();
