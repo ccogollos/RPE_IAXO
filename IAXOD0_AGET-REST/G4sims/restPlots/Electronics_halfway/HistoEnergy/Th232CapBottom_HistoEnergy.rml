@@ -33,11 +33,11 @@
     <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_halfway.root" />
 
 	<!-- Track cuts -->
-    <globalCut variable="tckAna.nTracksXYZ" condition="==1" value="ON" />
+    <globalCut name="tckAna.nTracksXYZ" condition="==1" value="ON" />
 
     <!-- Energy cuts --> 
-    <globalCut variable="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
-    <globalCut variable="g4Ana.gasVolumeEDep" condition="<10" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<10" value="ON"/>
 
     <!-- Hit cuts -->
     <globalCut variable="hitsAna.xy2Sigma" condition="<2.6" value="ON"/>
