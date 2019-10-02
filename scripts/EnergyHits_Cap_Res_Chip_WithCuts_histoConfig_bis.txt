@@ -1,0 +1,37 @@
+Number_of_files_to_be_included
+22
+
+Integration_from__to_(keV)
+0.1 10
+
+Energy_resolution___at___(keV)
+
+FileName____contamination(Bq/unit)____Units____initial_events____Target_weight(cm2)____Name
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Co60_CapacitorsBottom/Plots/Plot_Co60_CapacitorsBottom_EnergyHisto_halfway.root 0.000036 21 500000000 6.76 Co60_Cap_Bottom_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Co60_CapacitorsTop/Plots/Plot_Co60_CapacitorsTop_EnergyHisto_halfway.root 0.000036 64 500000000 6.76 Co60_Cap_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Co60_ResistancesTop/Plots/Plot_Co60_ResistancesTop_EnergyHisto_halfway.root 0.0000021 128 500000000 6.76 Co60_Res_Top_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/K40_CapacitorsBottom/Plots/Plot_K40_CapacitorsBottom_EnergyHisto_halfway.root 0.00529 21 500000000 6.76 K40_Cap_Bottom_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/K40_ResistancesTop/Plots/Plot_K40_ResistancesTop_EnergyHisto_halfway.root 0.000029 128 500000000 6.76 K40_Res_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/K40_Chip/Plots/Plot_K40_Chip_EnergyHisto_halfway.root 0.00083 1 1000000000 6.76 K40_Chip_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Ra226_CapacitorsBottom/Plots/Plot_Ra226_CapacitorsBottom_EnergyHisto_halfway.root 0.00529 21 500000000 6.76 Ra226_Cap_Bottom_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Ra226_CapacitorsTop/Plots/Plot_Ra226_CapacitorsTop_EnergyHisto_halfway.root 0.00529 64 500000000 6.76 Ra226_Cap_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Ra226_ResistancesTop/Plots/Plot_Ra226_ResistancesTop_EnergyHisto_halfway.root 0.0000041 128 750000000 6.76 Ra226_Res_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Ra226_Chip/Plots/Plot_Ra226_Chip_EnergyHisto_halfway.root 0.00048 1 750000000 6.76 Ra226_Cap_Top_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Ra228_Chip/Plots/Plot_Ra228_Chip_EnergyHisto_halfway.root 0.00016 1 650000000 6.76 Ra228_Chip_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th228_CapacitorsBottom/Plots/Plot_Th228_CapacitorsBottom_EnergyHisto_halfway.root 0.00875 21 500000000 6.76 Th228_Cap_Bottom_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th228_CapacitorsTop/Plots/Plot_Th228_CapacitorsTop_EnergyHisto_halfway.root 0.00875 64 500000000 6.76 Th228_Cap_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th228_ResistancesTop/Plots/Plot_Th228_ResistancesTop_EnergyHisto_halfway.root 0.0000044 128 500000000 6.76 Th228_Res_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th228_Chip/Plots/Plot_Th228_Chip_EnergyHisto_halfway.root 0.00047 1 750000000 6.76 Th228_Chip_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th232_ResistancesTop/Plots/Plot_Th232_ResistancesTop_EnergyHisto_halfway.root 0.000014 128 500000000 6.76 Th232_Res_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th232_CapacitorsTop/Plots/Plot_Th232_CapacitorsTop_EnergyHisto_halfway.root 0.00852 64 550000000 6.76 Th232_Cap_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/Th232_CapacitorsBottom/Plots/Plot_Th232_CapacitorsBottom_EnergyHisto_halfway.root 0.00852 21 250000000 6.76 Th232_Cap_Bottom_Bckgnd
+
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/U238_CapacitorsBottom/Plots/Plot_U238_CapacitorsBottom_EnergyHisto_halfway.root 0.0104 21 400000000 6.76 U238_Cap_Bottom_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/U238_CapacitorsTop/Plots/Plot_U238_CapacitorsTop_EnergyHisto_halfway.root 0.0104 64 400000000 6.76 U238_Cap_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/U238_ResistancesTop/Plots/Plot_U238_ResistancesTop_EnergyHisto_halfway.root 0.000852 128 400000000 6.76 U238_Res_Top_Bckgnd
+/home/ccogollos/RPE_IAXO/results/histo_energy_halfway_With_Cuts/U238_Chip/Plots/Plot_U238_Chip_EnergyHisto_halfway.root 0.00877 1 200000000 6.76 U238_Chip_Bckgnd
