@@ -104,9 +104,9 @@
     <parameter name="cutForPositron" value="1" units="mm" />
 
     <!-- EM Physics lists -->
-    <physicsList name="G4EmLivermorePhysics"> </physicsList>
+    <!--<physicsList name="G4EmLivermorePhysics"> </physicsList> -->
     <!-- <physicsList name="G4EmPenelopePhysics"> </physicsList> -->
-    <!-- <physicsList name="G4EmStandardPhysics_option3"> </physicsList> -->
+    <physicsList name="G4EmStandardPhysics_option3"> </physicsList>
 
     <!-- Decay physics lists -->
     <physicsList name="G4DecayPhysics"> </physicsList>
