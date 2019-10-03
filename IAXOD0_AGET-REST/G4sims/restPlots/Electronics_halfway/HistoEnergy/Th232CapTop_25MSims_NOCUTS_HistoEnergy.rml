@@ -55,7 +55,7 @@
 
     <!-- Plot configuration -->
 
-    <plot name="Energy in gas" title="Deposited energy in gas by radiation emmited from the chip" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/EGas${DIR_DATA}.root" value="ON" >
+    <plot name="Energy in gas" title="Deposited energy in gas by radiation emmited from the chip" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/EGas_25M_NOCUTS_${DIR_DATA}.root" value="ON" >
         <variable name="g4Ana.gasVolumeEDep" range="(0,10)" nbins="100"/>  <!--Histogram with 0.1keV bins -->
     </plot>
 
