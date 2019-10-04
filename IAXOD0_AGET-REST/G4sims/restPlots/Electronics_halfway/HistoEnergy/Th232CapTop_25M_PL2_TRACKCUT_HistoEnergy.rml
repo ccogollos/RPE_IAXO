@@ -25,7 +25,7 @@
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_25M_PL2_${Isotope}_${Component}${Location}_00349_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_25M_PL2_${Isotope}_${Component}${Location}_00348_Version_2.1.6.root" />
 
 
     <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
