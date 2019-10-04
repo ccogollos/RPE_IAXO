@@ -54,9 +54,9 @@ source ~/.bashrc
 #restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_HistoEnergy.rml
 #restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232ResTop_HistoEnergy.rml
 
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_NOCUTS_HistoEnergy.rml
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_TRACKCUT_HistoEnergy.rml
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_ALLCUTS_HistoEnergy.rml
+#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_NOCUTS_HistoEnergy.rml
+#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_TRACKCUT_HistoEnergy.rml
+#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_ALLCUTS_HistoEnergy.rml
 
 restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25M_PL2_NOCUTS_HistoEnergy.rml
 restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25M_PL2_TRACKCUT_HistoEnergy.rml
