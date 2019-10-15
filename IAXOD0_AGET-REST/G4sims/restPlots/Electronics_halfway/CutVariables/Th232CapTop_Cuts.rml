@@ -31,7 +31,7 @@
     <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00337_Version_2.1.6.root" />
 
 
-    <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
+    <parameter name="plotMode" divide="(3,2)" value="add" /> <!-- plotModes available : compare, add -->
 
     <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_CutsHisto_halfway.root" />
 
