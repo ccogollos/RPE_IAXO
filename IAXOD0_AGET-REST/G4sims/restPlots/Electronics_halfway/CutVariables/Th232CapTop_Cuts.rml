@@ -63,23 +63,23 @@
         <variable name="g4Ana.gasVolumeEDep" range="(0,200)" nbins="100"/>  
     </plot>
 
-    <plot name="Sigma xy^2" title="Sigma xy^2" xlabel="Sigma xy^2" ylabel="" logscale="false" save="${DIR_PLOT}/temp/SigmaXY${DIR_DATA}.root" value="ON" >
+    <plot name="Sigma xy^2" title="Sigma xy^2" xlabel="Sigma xy^2" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/SigmaXY${DIR_DATA}.root" value="ON" >
         <variable name="hitsAna.xy2Sigma" range="(0,800)" nbins="100"/>  
     </plot>
 
-    <plot name="Sigma z^2" title="Sigma z^2" xlabel="Sigma z^2" ylabel="" logscale="false" save="${DIR_PLOT}/temp/SigmaZ${DIR_DATA}.root" value="ON" >
+    <plot name="Sigma z^2" title="Sigma z^2" xlabel="Sigma z^2" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/SigmaZ${DIR_DATA}.root" value="ON" >
         <variable name="hitsAna.z2Sigma" range="(0,120)" nbins="100"/>  
     </plot>
 
-    <plot name="Sigma xy balance" title="Sigma xy balance" xlabel="Sigma xy balance" ylabel="" logscale="false" save="${DIR_PLOT}/temp/SigmaXYBalance${DIR_DATA}.root" value="ON" >
+    <plot name="Sigma xy balance" title="Sigma xy balance" xlabel="Sigma xy balance" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/SigmaXYBalance${DIR_DATA}.root" value="ON" >
         <variable name="hitsAna.xySigmaBalance" range="(-1,1)" nbins="100"/>  
     </plot>
 
-    <plot name="Skew xy" title="Skewness xy" xlabel="Skew xy" ylabel="" logscale="false" save="${DIR_PLOT}/temp/SkewXY${DIR_DATA}.root" value="ON" >
+    <plot name="Skew xy" title="Skewness xy" xlabel="Skew xy" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/SkewXY${DIR_DATA}.root" value="ON" >
         <variable name="hitsAna.xySkew" range="(-10,10)" nbins="100"/>  
     </plot>
 
-    <plot name="Skew z" title="Skewness z" xlabel="Skew z" ylabel="" logscale="false" save="${DIR_PLOT}/temp/SkewZ${DIR_DATA}.root" value="ON" >
+    <plot name="Skew z" title="Skewness z" xlabel="Skew z" ylabel="Counts" logscale="false" save="${DIR_PLOT}/temp/SkewZ${DIR_DATA}.root" value="ON" >
         <variable name="hitsAna.zSkew" range="(-10,10)" nbins="100"/> 
     </plot>
 

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#
-
 #SBATCH -J  PlotHistoCuts             # job name
 #SBATCH -o  PlotHistoCuts.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
@@ -23,36 +21,36 @@
 
 source ~/.bashrc
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Co60ResTop_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Cs137ResTop_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40ResTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40Chip_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/K40Chip_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226ResTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226Chip_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra226Chip_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra228Chip_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Ra228Chip_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228ResTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228Chip_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th228Chip_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th232CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th232CapBottom_Cuts.rml
 restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th232CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th232ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/Th232ResTop_Cuts.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapBottom_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238ResTop_Cuts.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238Chip_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238ResTop_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238Chip_Cuts.rml
