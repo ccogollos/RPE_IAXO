@@ -1,5 +1,5 @@
 // histograms filled and drawn in a loop
-#include <iostream.h>
+#include <iostream>
 #include<fstream>
 #include<iomanip>
 #include <string>
@@ -19,6 +19,7 @@ void histoComp() {
     cin>>histofile;
 
     ifstream in;
+    ofstream output;
     //in.open("HistoVessel.txt");
     in.open(histofile.c_str());
     cout<<"file opened"<<endl;
@@ -35,6 +36,9 @@ void histoComp() {
     cout<<"number of files to be included "<<nlines<<endl;
     in>>info1>>iener>>fener;
     cout<<"Integrated values from "<<iener<<" to "<<fener<<" will be given "<<endl;
+    in>>info2;
+    cout<<info2<<endl;
+
     in>>info2;
     cout<<info2<<endl;
 
@@ -61,7 +65,7 @@ void histoComp() {
     Double_t norm[100];
     // Create some histograms.
    
-    output=fopen("/home/cristian/Histo_Scripts/histoCompResults.txt","a");
+    output.open("/home/cristian/Histo_Scripts/histoCompResults.txt");
 
     for(i=0; i<nlines; i++)
     {
@@ -108,7 +112,7 @@ void histoComp() {
 
         cout << "MaxY : "  << MaxY[i] << endl;
         
-        fprintf(output,"%s %.2lf %.2lf %.0lf %.2lf %.2lf %.2lf %lf %lf\n", file, b[i], w[i], ie[i], ac[i], iener, fener, integral[i], ierror[i] );
+        output<<printf("%s %.2lf %.2lf %.0lf %.2lf %.2lf %.2lf %lf %lf\n", file, b[i], w[i], ie[i], ac[i], iener, fener, integral[i], ierror[i]);
 
 
         //cout<<"Maximum "<<MaxY[i]<<" entries "<<NEntries[i]<<endl;
@@ -116,7 +120,7 @@ void histoComp() {
         delete[] file;
     }
 
-    fclose(output);
+    output.close();
 
     for(i=0; i<nlines; i++)
     {

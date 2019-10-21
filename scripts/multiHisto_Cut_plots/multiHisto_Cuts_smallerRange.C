@@ -74,44 +74,50 @@ void multiHisto_Cuts(char *filename)
     cc->Divide(3,2);
 
     cc->cd(1);
-    h1->SetStats(0);
+//    h1->SetStats(0);
     h1->Draw();
     h1->GetYaxis()->SetTitle("counts");
+    h1->GetXaxis()->SetTitle("Energy(keV)");
     l1->Draw();
 
 	cc->cd(2);
-    h2->SetStats(0);
+//    h2->SetStats(0);
     h2->GetXaxis()->SetRangeUser(0,200);
     h2->GetYaxis()->SetTitle("counts");
+    h2->GetXaxis()->SetTitle("Sigmaxy^2(mm^2)");
     h2->Draw();
     l2->Draw();
 
     cc->cd(3);
-    h3->SetStats(0);
+//    h3->SetStats(0);
     h3->GetXaxis()->SetRangeUser(0,60);
     h3->GetYaxis()->SetTitle("counts");
+    h3->GetXaxis()->SetTitle("Sigmaz^2(mm^2)");
     h3->Draw();
     l3->Draw();
 
     cc->cd(4);
-    h4->SetStats(0);
+//    h4->SetStats(0);
     h4->GetYaxis()->SetTitle("counts");
+    h4->GetXaxis()->SetTitle("Balance Sigmaxy");
     h4->Draw();
     l4a->Draw();
     l4b->Draw();
 
     cc->cd(5);
-    h5->SetStats(0);
+//    h5->SetStats(0);
     h5->GetXaxis()->SetRangeUser(-4,4);
+    h5->GetXaxis()->SetTitle("Skewness xy");
     h5->GetYaxis()->SetTitle("counts");
     h5->Draw();
     l5a->Draw();
     l5b->Draw();
 
     cc->cd(6);
-    h6->SetStats(0);
+//    h6->SetStats(0);
     h6->GetXaxis()->SetRangeUser(-4,4);
     h6->GetYaxis()->SetTitle("counts");
+    h6->GetXaxis()->SetTitle("Skewness z");
     h6->Draw();
     l6a->Draw();
     l6b->Draw();
