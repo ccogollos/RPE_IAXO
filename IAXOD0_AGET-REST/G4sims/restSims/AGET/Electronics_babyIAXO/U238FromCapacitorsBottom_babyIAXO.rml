@@ -27,9 +27,9 @@
    
     <variable name="REST_NEVENTS" value="100000000" overwrite="true" />
     <variable name="REST_ISOTOPE" value="U238" overwrite="true" /> <!-- Options: "U238", "Ra226", "Ra228", "Th228", "K40" -->   
-    <variable name="REST_VOLUME" value="CapTopCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" -->  
+    <variable name="REST_VOLUME" value="CapBottomCentrePhysVolume" overwrite="true" /> <!-- Options: "ChipVolume" -->  
 
-    <variable name="DIR_DATA" value="U238_CapacitorsTop" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
+    <variable name="DIR_DATA" value="U238_CapacitorsBottom" overwrite="true" />  <!-- Options: "Ar39Gas", "Pb210Shielding" --> 
     
 </environment>
 
