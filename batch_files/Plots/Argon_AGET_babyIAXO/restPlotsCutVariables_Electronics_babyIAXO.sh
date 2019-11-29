@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH -J  PlotHistoCutsU238CApBottomHalfway             # job name
-#SBATCH -o  PlotHistoCutsU238CApBottomHalfway.o%j           # output and error file name (%j expands to jobID)
+#SBATCH -J  PlotHistoCutsU238CApBottomBabyIAXO             # job name
+#SBATCH -o  PlotHistoCutsU238CApBottomBabyIAXO.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 

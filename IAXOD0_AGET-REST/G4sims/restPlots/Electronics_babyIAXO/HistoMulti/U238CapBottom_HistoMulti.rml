@@ -14,7 +14,7 @@
     <variable name="Component" value="Capacitors" />
     <variable name="Location" value="Bottom" />
 
-    <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_babyIAXO" overwrite="true" />
     <variable name="DIR_DATA" value="${Isotope}_${Component}${Location}" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
     <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
@@ -25,13 +25,12 @@
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00353_Version_2.1.6.root" />
-
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00352_Version_2.1.6.root" />
 
 
     <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 
-    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_halfway.root" />
+    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_babyIAXO.root" />
 
     <!-- Cuts to remove events out of the fiducial cylinder 
     <globalCut name="hitsAna.distanceToCylinderTop" condition=">0.1" value="ON"/>

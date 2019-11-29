@@ -1,7 +1,9 @@
 #!/bin/bash
 
-#SBATCH -J  PlotHistoCutsU238CApBottomHalfway             # job name
-#SBATCH -o  PlotHistoCutsU238CApBottomHalfway.o%j           # output and error file name (%j expands to jobID)
+#
+
+#SBATCH -J  PlotIsotopeU238CapBottomBabyIAXO               # job name
+#SBATCH -o  PlotIsotopeU238CapBottomBabyIAXO.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 
@@ -21,4 +23,5 @@
 
 source ~/.bashrc
 
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238CapBottom_HistoEnergy.rml
+

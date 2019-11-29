@@ -2,8 +2,8 @@
 
 #
 
-#SBATCH -J  PlotIsotopeU238Chip               # job name
-#SBATCH -o  PlotIsotopeU238Chip.o%j           # output and error file name (%j expands to jobID)
+#SBATCH -J  PlotIsotopeU238CapBottomHalfway               # job name
+#SBATCH -o  PlotIsotopeU238CapBottomHalfway.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 
@@ -23,46 +23,5 @@
 
 source ~/.bashrc
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Co60CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Co60CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Co60ResTop_HistoEnergy.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238CapBottom_HistoEnergy.rml
 
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Cs137CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Cs137CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Cs137ResTop_HistoEnergy.rml
-
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/K40CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/K40CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/K40ResTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/K40Chip_HistoEnergy.rml
-
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Ra226CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Ra226CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Ra226ResTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Ra226Chip_HistoEnergy.rml
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Ra228Chip_HistoEnergy.rml
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th228CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th228CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th228ResTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th228Chip_HistoEnergy.rml
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232ResTop_HistoEnergy.rml
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_NOCUTS_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_TRACKCUT_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25MSims_ALLCUTS_HistoEnergy.rml
-
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25M_PL2_NOCUTS_HistoEnergy.rml
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25M_PL2_TRACKCUT_HistoEnergy.rml
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/Th232CapTop_25M_PL2_ALLCUTS_HistoEnergy.rml
-
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238CapBottom_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238CapTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238ResTop_HistoEnergy.rml
-#restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238Chip_HistoEnergy.rml
