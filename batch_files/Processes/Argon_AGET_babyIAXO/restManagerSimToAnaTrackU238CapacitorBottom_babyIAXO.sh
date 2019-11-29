@@ -2,8 +2,8 @@
 
 #
 
-#SBATCH -J  SimU238FromCapacitorsTop_halfway               # job name
-#SBATCH -o  SimU238FromCapacitorsTop_halfway.o%j           # output and error file name (%j expands to jobID)
+#SBATCH -J  AnalysisTrackIsotopeFromCapacitorBottom               # job name
+#SBATCH -o  AnalysisTrackIsotopeFromCapacitorBottom.o%j           # output and error file name (%j expands to jobID)
 #SBATCH --mail-user cotri.ferm@gmail.com
 #SBATCH --mail-type=ALL
 #SBATCH -p bifi                # queue (partition) 
@@ -23,6 +23,4 @@
 
 source ~/.bashrc
 
-cd /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restSims/AGET/Electronics_babyIAXO
-
-restG4 U238FromCapacitorsTop_babyIAXO.rml
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_babyIAXO/restSimManagerU238CapacitorsBottom_babyIAXO.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_babyIAXO/U238_CapacitorsBottom/Run_simulation_U238fromCapBottomCentrePhysVolume_00352_Version_2.1.6.root
