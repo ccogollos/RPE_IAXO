@@ -23,5 +23,5 @@
 
 source ~/.bashrc
 
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/HistoEnergy/U238CapBottom_HistoEnergy.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_babyIAXO/HistoEnergy/U238CapBottom_HistoEnergy.rml
 

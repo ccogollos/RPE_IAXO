@@ -21,4 +21,4 @@
 
 source ~/.bashrc
 
-restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_halfway/CutVariables/U238CapBottom_Cuts.rml
+restPlots --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restPlots/Electronics_babyIAXO/CutVariables/U238CapBottom_Cuts.rml
