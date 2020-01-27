@@ -18,7 +18,7 @@
     <variable name="DIR_DATA" value="${Isotope}_${Component}${Location}" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
     <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
-    <variable name="CutsState" value="OFF" overwrite="true" />
+    <variable name="CutsState" value="ON" overwrite="true" />
     <variable name="labelTrack" value="1" overwrite="true" />
     <variable name="CutTrack" value="ON" overwrite="true" />
 </environment>
