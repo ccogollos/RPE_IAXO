@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
 <!-- This plot template shows an example of analysisPlot implementation.
      The file where we have applied a signalAnalysisProcess name sgnl.Ana -->
@@ -18,40 +18,41 @@
     <variable name="DIR_DATA" value="${Isotope}_${Component}${Location}" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
     <variable name="labelDtW" value="39.5" overwrite="true" /> <!-- Cathode fiducial cut: 39.5 // Spot fiducial cut: 43.75 -->
-    <variable name="CutDtW" value="ON" overwrite="true" />
+    <variable name="CutsState" value="OFF" overwrite="true" />
     <variable name="labelTrack" value="1" overwrite="true" />
     <variable name="CutTrack" value="ON" overwrite="true" />
 </environment>
 
 <!-- Adding the files to plot -->
 
-    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00353_Version_2.1.6.root" />
+    <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/TrackAnalysis/Run_TrackAnalysis_${Isotope}_${Component}${Location}_00259_Version_2.1.6.root" />
+
 
 
     <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 
-    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_halfway.root" />
+    <canvas size="(1200,800)" save="${DIR_PLOT}/Plot_${Isotope}_${Component}${Location}_EnergyHisto_Cuts${CutsState}_halfway.root" />
 
     <!-- Track cuts -->
-    <globalCut name="tckAna.nTracksXYZ" condition="==1" value="ON" />
+    <globalCut name="tckAna.nTracksXYZ" condition="==1" value="${CutsState}" />
 
     <!-- Energy cuts --> 
-    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="ON"/>
-    <globalCut name="g4Ana.gasVolumeEDep" condition="<10" value="ON"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition=">0.001" value="${CutsState}"/>
+    <globalCut name="g4Ana.gasVolumeEDep" condition="<10" value="${CutsState}"/>
 
     <!-- Hit cuts -->
-    <globalCut name="hitsAna.xy2Sigma" condition="<2.6" value="ON"/>
+    <globalCut name="hitsAna.xy2Sigma" condition="<2.6" value="${CutsState}"/>
 
-    <globalCut name="hitsAna.z2Sigma" condition="<0.55" value="ON"/>
+    <globalCut name="hitsAna.z2Sigma" condition="<0.55" value="${CutsState}"/>
 
-    <globalCut name="hitsAna.xySigmaBalance" condition=">-0.15" value="ON"/>
-    <globalCut name="hitsAna.xySigmaBalance" condition="<0.15" value="ON"/>
+    <globalCut name="hitsAna.xySigmaBalance" condition=">-0.15" value="${CutsState}"/>
+    <globalCut name="hitsAna.xySigmaBalance" condition="<0.15" value="${CutsState}"/>
 
-    <globalCut name="hitsAna.xySkew" condition=">-0.5" value="ON"/>
-    <globalCut name="hitsAna.xySkew" condition="<0.5" value="ON"/>
+    <globalCut name="hitsAna.xySkew" condition=">-0.5" value="${CutsState}"/>
+    <globalCut name="hitsAna.xySkew" condition="<0.5" value="${CutsState}"/>
 
-    <globalCut name="hitsAna.zSkew" condition=">-1.2" value="ON"/>
-    <globalCut name="hitsAna.zSkew" condition="<1.2" value="ON"/>
+    <globalCut name="hitsAna.zSkew" condition=">-1.2" value="${CutsState}"/>
+    <globalCut name="hitsAna.zSkew" condition="<1.2" value="${CutsState}"/>
 
 
     <!-- Plot configuration -->

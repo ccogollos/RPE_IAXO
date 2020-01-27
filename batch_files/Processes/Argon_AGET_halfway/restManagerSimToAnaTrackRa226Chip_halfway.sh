@@ -23,5 +23,6 @@
 
 source ~/.bashrc
 
+restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa226Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_Chip/Run_simulation_Ra226fromChipVolume_00309_Version_2.1.6.root
 restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa226Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_Chip/Run_simulation_Ra226fromChipVolume_00316_Version_2.1.6.root
 restManager --c /home/zar30001/cristian/RPE_IAXO/IAXOD0_AGET-REST/G4sims/restProcesses/Electronics_halfway/restSimManagerRa226Chip_halfway.rml --f /home/zar30001/cristian/RPE_IAXO/data/IAXOD0/Argon_AGET_halfway/Ra226_Chip/Run_simulation_Ra226fromChipVolume_00314_Version_2.1.6.root
